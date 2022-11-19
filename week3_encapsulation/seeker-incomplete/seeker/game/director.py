@@ -52,6 +52,7 @@ class Director:
         Args:
             self (Director): An instance of Director.
         """
+        
         self._hider.watch_seeker(self._seeker)
         
     def _do_outputs(self):

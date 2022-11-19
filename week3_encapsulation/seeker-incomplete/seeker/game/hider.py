@@ -54,5 +54,7 @@ class Hider:
         Args:
             self (Hider): An instance of Hider.
         """
+        
+        
         distance = abs(self._location - seeker.get_location())
         self._distance.append(distance)

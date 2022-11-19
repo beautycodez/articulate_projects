@@ -17,7 +17,7 @@ class Seeker:
         Args:
             self (Seeker): An instance of Seeker.
         """
-        self.location = 
+        self.location = 0
 
 # 3) Create the get_location(self) method. Use the following method comment.
     def get_location(self):
@@ -26,14 +26,18 @@ class Seeker:
         Returns:
             number: The current location,
         """
+        
         location = self.location
         return location
         
 # 4) Create the move_location(self, location) method. Use the following method comment.
-    def move_location(self, location):
+    def move_location(self,location):
         """Moves to the given location.
 
         Args:
             self (Seeker): An instance of Seeker.
             location (int): The given location.
-        """
+      """
+        self.location=location
+        
+
