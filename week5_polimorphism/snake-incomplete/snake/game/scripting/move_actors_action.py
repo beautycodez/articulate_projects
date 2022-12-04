@@ -9,12 +9,17 @@ from game.scripting.action import Action
 # 3) call the move_next() method on each actor
 class MoveActorsAction(Action):
     def __init__(self):
-        self._cast =[]
+        super().__init__()
+
         
 
     def execute(self, cast, script):
-        self._cast = []
-        for actor in cast:
-            self._cast.append(actor)
+        actors = cast.get_all_actors()
+        for actor in  actors:
             actor.move_next()
+            
+            
+            
+
+
         
