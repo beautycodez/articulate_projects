@@ -18,9 +18,16 @@ class DrawHudAction(Action):
     # **********************************************************************************************
     # todo: fix the bug by making sure the text value is set to the appropriate variable.
     def _draw_label(self, cast, group, format_str, data):
+        # the_value_to_display = format_str.format(data)
+        # label = cast.get_first_actor(group)
+        # text = label.get_text()
+        # text.set_value(format_str)
+        # position = label.get_position()
+        # self._video_service.draw_text(text, position)
+
         the_value_to_display = format_str.format(data)
         label = cast.get_first_actor(group)
         text = label.get_text()
-        text.set_value(format_str)
+        text.set_value(the_value_to_display)
         position = label.get_position()
         self._video_service.draw_text(text, position)
